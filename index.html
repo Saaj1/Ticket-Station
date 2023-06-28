@@ -8,7 +8,19 @@
   <header>
     <h1>Welcome to TicketStation</h1>
   </header>
+  <div>
+    <label for="search-input">Search:</label>
+    <input type="text" id="search-input" />
+  </div>
 
+  <div>
+    <label for="category-filter">Filter by Category:</label>
+    <select id="category-filter">
+      <option value="all">All</option>
+      <option value="Band">Band</option>
+      <option value="Solo Artist">Solo Artist</option>
+    </select>
+  </div>
   <div id="event-list"></div>
 
   <script src="index.js"></script>
