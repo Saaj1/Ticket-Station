@@ -74,7 +74,8 @@ const events = [
   new Event('Beyoncé Formation Tour', '2023-02-09', '19:00:00', 'Houston, TX', 'Solo Artist', 1800, 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2825_of_118%29_%2852946287590%29_%28center_cropped%29.jpg'),
   new Event('Imagine Dragons Live Show', '2023-02-02', '21:00:00', 'Las Vegas, NV', 'Band', 1000, 'https://www.billboard.com/wp-content/uploads/2022/12/imagine-dragons-Press-Photo-Credit-Eric-Ray-Davidson-2022-billboard-1548.jpg'),
   new Event('Bruno Mars World Tour', '2023-01-15', '20:30:00', 'Miami, FL', 'Solo Artist', 1500, 'https://cdns-images.dzcdn.net/images/artist/7f3c0956357c326b2db2cf436f1dc8c5/500x500.jpg'),
-  new Event('Maroon 5 Concert', '2023-01-10', '19:00:00', 'San Francisco, CA', 'Band', 1800, 'https://media.npr.org/assets/music/news/2010/09/maroon-e9cb8c5b25b4d1f3e68aa26e6a0ce51cf2ae59d8-s1100-c50.jpg')
+  new Event('Maroon 5 Concert', '2023-01-10', '19:00:00', 'San Francisco, CA', 'Band', 1800, 'https://media.npr.org/assets/music/news/2010/09/maroon-e9cb8c5b25b4d1f3e68aa26e6a0ce51cf2ae59d8-s1100-c50.jpg'),
+  new Event('Chris Brown Live', '2023-07-10', '19:00:00', 'Las Angeles, CA', 'Solo Artist', 2000, 'https://i.pinimg.com/736x/3a/df/08/3adf08eb185595d4f2c6e3c3f570a069.jpg')
 ];
 
 // Function to render the events
