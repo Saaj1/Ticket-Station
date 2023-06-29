@@ -1,9 +1,58 @@
-.event-card {
-  border : solid 5px pink;
-  width: 10rem;
 
-}
 
 img {
-  width: 12rem;
+  
+}
+
+h2{
+  color: #fff;
+  text-shadow: 
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #0fa,
+  0 0 82px #0fa,
+  0 0 102px #0fa,
+  0 0 151px #0fa,
+  0 0 7px #0fa;
+}
+
+p{
+  color: #fff;
+  text-shadow: 
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #f09,
+  0 0 82px #f0a,
+  0 0 92px #f09,
+  0 0 102px #f09,
+  0 0 151px #f09;
+}
+
+.event-card {
+  background-image: url('js/pexels-photo-3721941.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  width: 180px;
+}
+
+.event-card img {
+  width: 200px;
+  height: 200px;
+}
+
+.event-card h2 {
+  margin-top: 0;
+}
+
+.event-card p {
+  margin-top: 5px;
 }
