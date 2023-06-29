@@ -11,6 +11,7 @@ class Event {
   }
 
   render() {
+    // Create a div element with the class 'event-card'
     const eventCard = document.createElement('div');
     eventCard.className = 'event-card';
 
@@ -21,6 +22,9 @@ class Event {
     const nameElement = document.createElement('h2');
     nameElement.textContent = this.name;
     eventCard.appendChild(nameElement);
+
+    // Create a paragraph element for the date and set its text content
+    // format date using `this.date.toDateString()`
 
     const dateElement = document.createElement('p');
     dateElement.textContent = `Date: ${this.date.toDateString()}`;
@@ -42,11 +46,12 @@ class Event {
     ticketsElement.textContent = `Tickets availabe: ${this.tickets}`;
     eventCard.appendChild(ticketsElement);
 
+    // Return the event card element
     return eventCard;
   }
 }
 
-// Create some events
+// Create some events instances
 const events = [
   new Event('BTS Live Concert', '2023-08-15', '10:00:00', 'New York, NY', 'Band', 1000, 'https://m.sakshipost.com/sites/default/files/article_images/2022/08/29/bts-1661754908.jpg'),
   new Event('Coldplay Live Concert', '2023-07-30', '10:00:00', 'Madison Square Garden, New York, NY', 'Band', 1000, 'https://i.scdn.co/image/ab6761610000e5eb989ed05e1f0570cc4726c2d3'),
