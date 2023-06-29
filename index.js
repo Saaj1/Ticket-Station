@@ -46,6 +46,20 @@ class Event {
     ticketsElement.textContent = `Tickets availabe: ${this.tickets}`;
     eventCard.appendChild(ticketsElement);
 
+    // Create a button element
+    const buttonElement = document.createElement('button');
+    buttonElement.textContent = 'Buy Tickets'; // Set the button text
+
+    // Add event listener to the button
+    buttonElement.addEventListener('click', () => {
+      // Handle button click event here
+      console.log('Button clicked!');
+    });
+
+    // Add the button to the event card
+    eventCard.appendChild(buttonElement);
+
+
     // Return the event card element
     return eventCard;
   }
