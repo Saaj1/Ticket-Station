@@ -128,17 +128,10 @@ renderEvents(events);
 
 
 // Ticket class
-class Ticket {
-  constructor(name, price) {
-    this.name = name;
-    this.price = price;
-  }
-}
+// class Ticket {
+//   constructor(name, price) {
+//     this.name = name;
+//     this.price = price;
+//   }
+// }
 
-// User class
-class User {
-  constructor(name, email) {
-    this.name = name;
-    this.email = email;
-  }
-}
