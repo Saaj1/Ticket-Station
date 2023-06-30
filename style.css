@@ -11,14 +11,14 @@ body {
   text-align: center;
   color: #0aefff;
   text-shadow:
-  0 0 7px #fff,
-  0 0 7px #fff,
-  0 0 7px #fff,
-  0 0 10px #0fa,
-  0 0 10px #0fa,
-  0 0 10px #0fa,
-  0 0 10px #0fa,
-  0 0 10px #0fa;
+  0 0 2px #fff,
+  0 0 2px #fff,
+  0 0 2px #fff,
+  0 0 4px #0fa,
+  0 0 4px #0fa,
+  0 0 4px #0fa,
+  0 0 4px #0fa,
+  0 0 4px #0fa;
   font-family: 'Ysabeau SC', sans-serif;
 }
 
@@ -29,7 +29,7 @@ h2{
   0 0 7px #fff,
   0 0 7px #fff,
   0 0 7px #fff,
-  0 0 10px #0fa,
+  0 0 7px #0fa,
   0 0 10px #0fa,
   0 0 10px #0fa,
   0 0 10px #0fa,
@@ -107,6 +107,17 @@ label {
   width: 5rem;
   padding: 0.2rem;
   border-radius: 1rem;
+}
+
+#date-filter {
+  border-radius: 1rem;
+  border: none;
+  padding:0.2rem ;
+  background-color: lightgrey;
+}
+
+.Filterdate {
+  color: #f09;
 }
 
 button {
