@@ -79,18 +79,29 @@ const events = [
 ];
 
 // Function to render the events
-function renderEvents(eventsToRender, categoryFilter = 'all') {
+function renderEvents(eventsToRender, categoryFilter = 'all', dateFilter = 'all') {
   const eventListElement = document.getElementById('event-list');
   eventListElement.innerHTML = '';
 
   // Sort the events by date in ascending order
   eventsToRender.sort((a, b) => a.date.getTime() - b.date.getTime());
 
+  const currentDate = new Date();
+
   eventsToRender.forEach(event => {
     // Apply category filter if it is not set to 'all'
     if (categoryFilter === 'all' || event.category === categoryFilter) {
-      const eventCard = event.render();
-      eventListElement.appendChild(eventCard);
+      // Apply date filter based on user selection
+      if (dateFilter === 'upcoming' && event.date >= currentDate) {
+        const eventCard = event.render();
+        eventListElement.appendChild(eventCard);
+      } else if (dateFilter === 'passed' && event.date < currentDate) {
+        const eventCard = event.render();
+        eventListElement.appendChild(eventCard);
+      } else if (dateFilter === 'all') {
+        const eventCard = event.render();
+        eventListElement.appendChild(eventCard);
+      }
     }
   });
 }
@@ -102,13 +113,14 @@ function handleSearch() {
   const searchTerm = searchInput.value.toLowerCase();
 
   const categoryFilter = document.getElementById('category-filter').value;
+  const dateFilter = document.getElementById('date-filter').value;
 
   const filteredEvents = events.filter(event => {
     const eventName = event.name.toLowerCase();
     return eventName.includes(searchTerm);
   });
 
-  renderEvents(filteredEvents, categoryFilter);
+  renderEvents(filteredEvents, categoryFilter, dateFilter);
 }
 
 
@@ -116,8 +128,16 @@ function handleSearch() {
 const searchInput = document.getElementById('search-input');
 searchInput.addEventListener('input', handleSearch);
 
+// Event listener for category filter
 const categoryFilter = document.getElementById('category-filter');
 categoryFilter.addEventListener('change', handleSearch);
+
+// Event listener for date filter
+const dateFilter = document.getElementById('date-filter');
+dateFilter.addEventListener('change', handleSearch);
+
+// Call the handleSearch function initially to display all events
+handleSearch();
 
 
 // Call the renderEvents function to display the events initially
