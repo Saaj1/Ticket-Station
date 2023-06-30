@@ -1,3 +1,8 @@
+ body {
+  background-image: url();
+ }
+
+
 .event-container {
     font-family: "Roboto", sans-serif;
     max-width: 800px;
@@ -49,7 +54,7 @@
   .event .event-right h3.event-title {
     font-size: 24px;
     margin: 24px 0 10px 0;
-    color: #218bbb;
+    color: #bb8221;
     text-transform: uppercase;
   }
   
