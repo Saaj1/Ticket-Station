@@ -32,3 +32,17 @@ document.getElementById("signInForm").addEventListener("submit", function(event)
   // Redirect to index.html
   window.location.href = 'index.html';
 });
+
+ // Retrieve the user object from session storage
+ const storedUser = sessionStorage.getItem('user');
+
+ if (storedUser) {
+   // Parse the user object from JSON format
+   const user = JSON.parse(storedUser);
+
+   // Display the greeting with the username
+   alert('Welcome, ' + user.name + '!');
+
+   // Clear the user object from session storage
+   sessionStorage.removeItem('user');
+}
