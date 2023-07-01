@@ -1,0 +1,39 @@
+.ticket-container {
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 2%;
+  width: 900px;
+  height: 300px;
+  background: linear-gradient(
+    109.6deg,
+    rgb(9, 9, 121) 11.2%,
+    rgb(144, 6, 161) 53.7%,
+    rgb(0, 212, 255) 100.2%
+  );
+  color: #fff;
+}
+
+.success-message {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.event-nameRight {
+  font-size: 20px;
+}
+
+.event-nameLeft {
+  font-size: 30px;
+}
+
+.event-nameRight,
+.event-nameLeft {
+  color: #8ef6e4;
+  text-shadow: 5px 5px 12px rgba(39, 201, 160, 0.863);
+  font-weight: 600;
+}
+
+.barcode-image {
+  width: 130px;
+}
