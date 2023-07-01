@@ -7,7 +7,7 @@ body{
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
 	/* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
-	background-image: url(/images/headphones.jpg);
+	background-image: url(/images/img1.jpg);
 	background-position: center;
 }
 .main{
@@ -26,6 +26,8 @@ body{
 	position: relative;
 	width:100%;
 	height: 100%;
+	text-shadow: 0px 0px 5px #573b8a, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #ceebe6;
 }
 label{
 	color: #fff;
@@ -48,6 +50,8 @@ input{
 	border: none;
 	outline: none;
 	border-radius: 5px;
+	box-shadow: 0px 0px 5px #c3bcd1, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #ceebe6; ;
 }
 button{
 	width: 60%;
@@ -65,6 +69,8 @@ button{
 	border-radius: 5px;
 	transition: .2s ease-in;
 	cursor: pointer;
+	text-shadow: 0px 0px 5px #ceebe6, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #ceebe6;
 }
 button:hover{
 	background: #6d44b8;
@@ -75,10 +81,12 @@ button:hover{
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;
+	
 }
 .login label{
 	color: #573b8a;
 	transform: scale(.6);
+	
 }
 
 #chk:checked ~ .login{
@@ -89,4 +97,14 @@ button:hover{
 }
 #chk:checked ~ .signup label{
 	transform: scale(.6);
+}
+.header{
+	position: fixed; top: 0; left: 50%; transform: translateX(-50%);
+	margin: 2%;
+	font-size:xxx-large;
+	font-weight: 600;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #573b8a, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #ceebe6;
+	animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
 }
