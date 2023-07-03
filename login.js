@@ -41,8 +41,8 @@ document.getElementById("signInForm").addEventListener("submit", function(event)
   // Store the user object in session storage for access on the index.html page
   sessionStorage.setItem('user', JSON.stringify(user));
 
-  // Redirect to index.html
-  window.location.href = 'index.html';
+  // Redirect to events.html
+  window.location.href = "events.html";
 });
 
 // Email validation function
