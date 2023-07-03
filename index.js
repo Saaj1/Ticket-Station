@@ -50,9 +50,15 @@ class Event {
     priceElement.textContent = `Price: R${this.price}`;
     eventCard.appendChild(priceElement);
 
-    // Create a button element
     const buttonElement = document.createElement("button");
-    buttonElement.textContent = "Buy Tickets"; // Set the button text
+    buttonElement.textContent = "Buy Tickets";
+
+    // Check if the event has already passed
+    const currentDate = new Date();
+    if (this.date < currentDate) {
+      buttonElement.disabled = true; // Disable the button if the event has passed
+      buttonElement.textContent = "Passed"; // Update the button text
+    }
 
     // Add event listener to the button
     buttonElement.addEventListener("click", () => {
@@ -239,10 +245,3 @@ handleSearch();
 // Call the renderEvents function to display the events initially
 renderEvents(events);
 
-// Ticket class
-// class Ticket {
-//   constructor(name, price) {
-//     this.name = name;
-//     this.price = price;
-//   }
-// }
