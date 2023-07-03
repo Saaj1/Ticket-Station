@@ -244,4 +244,3 @@ handleSearch();
 
 // Call the renderEvents function to display the events initially
 renderEvents(events);
-
