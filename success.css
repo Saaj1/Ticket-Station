@@ -43,7 +43,7 @@ h4 {
 #backToEvents,
 #print-button {
   display: inline-block;
-  border: radius 20px; ;
+  border: radius 20px;
   text-align: center;
   padding: 10px 35px;
   margin: 0 10px; /* Add margin between the buttons */
