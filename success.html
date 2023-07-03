@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticket Booking Success</title>
-    <link rel="stylesheet" href="success.css" />
+
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter&family=Delicious+Handrawn&family=Homemade+Apple&family=Indie+Flower&family=La+Belle+Aurore&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Script&family=Nanum+Myeongjo&family=Press+Start+2P&family=Quicksand&family=Righteous&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap"
       rel="stylesheet"
@@ -18,28 +22,35 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="success.css" />
   </head>
   <body>
     <section class="booking-success-section">
       <div class="booking-success-modal">
-        <h2 class="text-center">Booking Successful!</h2>
-        <div class="col-lg-6 col-md-6 col-12" id="success-container">
+        <h2 class="heading-sucess">Booking Successful!</h2>
+        <div class="container">
           <form id="ticket-form">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div id="event-details"></div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <p><strong>Name:</strong> <span class="ticket-name"></span></p>
-              <p><strong>Email:</strong> <span class="ticket-email"></span></p>
-              <p>
-                <strong>Admit:</strong>
-                <span class="ticket-number"></span>
-              </p>
+            <div class="ticket-details">
+              <div class="col-lg-4 col-md-4 col-12">
+                <h3>Ticket<br />Station</h3>
+                <img src="images/barcode2.png" alt="barcode" class="barcode" />
+              </div>
+              <div class="col-lg-8 col-md-8 col-12">
+                <div id="event-details"></div>
+                <p><strong>Name:</strong> <span class="ticket-name"></span></p>
+                <p>
+                  <strong>Email:</strong> <span class="ticket-email"></span>
+                </p>
+                <p>
+                  <strong>Admit:</strong>
+                  <span class="ticket-number"></span>
+                </p>
+              </div>
             </div>
           </form>
         </div>
       </div>
-      <div class="text-center">
+      <div class="nav-buttons">
         <button
           class="btn btn-primary"
           id="backToEvents"
@@ -47,7 +58,12 @@
         >
           Back to Events
         </button>
-        <button href="" class="btn btn-primary" onclick="closeModal()">
+        <button
+          href=""
+          class="btn btn-primary"
+          id="print-button"
+          onclick="closeModal()"
+        >
           Print
         </button>
       </div>
