@@ -131,7 +131,7 @@ const events = [
     "https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/32/1471002537-gettyimages-453482991.jpg?resize=1200:*",
     2800
   ),
-  new Event(
+  new Ticket(
     "Imagine Dragons Live Show",
     "2023-02-02",
     "21:00:00",
@@ -139,7 +139,7 @@ const events = [
     "Band",
     1000,
     "https://www.thesouthafrican.com/wp-content/uploads/2022/06/Imagine-Dragons.jpg",
-    1000
+    0
   ),
   new Ticket(
     "Bruno Mars World Tour",

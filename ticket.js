@@ -36,7 +36,6 @@ quantityInput.addEventListener("input", calculateTotal);
 function calculateTotal() {
   const price = parseFloat(selectedTicket.price);
   const quantity = parseInt(quantityInput.value);
-
   const total = price * quantity;
 
   // Update the total price input field
@@ -50,21 +49,28 @@ function calculateTotal() {
 //success message
 document.addEventListener("DOMContentLoaded", function () {
   document
-    .getElementById("ticket-form")
-    .addEventListener("submit", function (event) {
+    .getElementById("buyTicket-button")
+    .addEventListener("click", function (event) {
       event.preventDefault(); // Prevent form submission
 
       // Get form values
-      let name = document.getElementById("name").value;
-      let email = document.getElementById("email").value;
-      let numTickets = document.getElementById("num-tickets").value;
+      let name = document.getElementById("ticket-form-name").value;
+      let email = document.getElementById("ticket-form-email").value;
+      let numTickets = document.getElementById("ticket-form-number").value;
 
       // Store form values in local storage
       localStorage.setItem("name", name);
       localStorage.setItem("email", email);
       localStorage.setItem("numTickets", numTickets);
 
-      // Redirect to the success page
-      window.location.href = "success.html";
+      // Generate the query parameters
+      let queryParams = `?name=${encodeURIComponent(
+        name
+      )}&email=${encodeURIComponent(email)}&numTickets=${encodeURIComponent(
+        numTickets
+      )}`;
+
+      // Redirect to the success page with query parameters
+      window.location.href = `success.html${queryParams}`;
     });
 });
