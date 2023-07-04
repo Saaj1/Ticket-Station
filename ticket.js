@@ -9,7 +9,7 @@ const markup = `
   <div class="col-lg-6 col-md-6 col-12">
     <h6>${selectedTicket.name}</h6>
     <p>Date: ${new Date(selectedTicket.date).toLocaleDateString()}</p>
-    <p>Price: R${selectedTicket.price}</p>
+    <p>Price: $${selectedTicket.price}</p>
   </div>
   <div class="col-lg-6 col-md-6 col-12">
     <p>Location: ${selectedTicket.location}</p>
@@ -23,7 +23,7 @@ eventDetails.innerHTML = markup;
 
 const priceInput = document.querySelector(".form-control[name='TicketForm']");
 if (priceInput) {
-  priceInput.value = `R${selectedTicket.price}`;
+  priceInput.value = `$${selectedTicket.price}`;
 }
 
 const quantityInput = document.getElementById("ticket-form-number");
@@ -40,7 +40,7 @@ function calculateTotal() {
 
   // Update the total price input field
   if (!isNaN(total)) {
-    totalPriceInput.value = `R${total.toFixed(2)}`;
+    totalPriceInput.value = `$${total.toFixed(2)}`;
   } else {
     totalPriceInput.value = "";
   }
