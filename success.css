@@ -1,10 +1,12 @@
+.container-wrapper {
+  padding: 40px; /* Add padding outside the container */
+}
+
 .container {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
   margin-top: 100px;
   padding: 2%;
-  width: 60%;
+  width: 100%;
   height: 350px;
   background-image: url(images/stage.png);
   background-size: cover;
@@ -78,4 +80,35 @@ h4 {
 .barcode {
   padding: 140px 0 0 0;
   width: 70%;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    height: 600px;
+    padding: 0 15px; /* Adjust the padding as per your needs */
+  }
+
+  .ticket-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .col-lg-8,
+  .col-lg-4 {
+    width: 80%;
+  }
+
+  .barcode {
+    padding: 20px 0 10px 0;
+    width: 100%;
+  }
+
+  h3 {
+    font-family: "Righteous", cursive;
+    font-size: 60px;
+    color: rgb(212, 59, 144);
+    text-shadow: 2px 2px 5px rgba(28, 226, 233, 0.795);
+  }
 }
