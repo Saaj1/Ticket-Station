@@ -47,7 +47,7 @@ class Event {
     eventCard.appendChild(ticketsElement);
 
     const priceElement = document.createElement("p");
-    priceElement.textContent = `Price: R${this.price}`;
+    priceElement.textContent = `Price: $${this.price}`;
     eventCard.appendChild(priceElement);
 
     const buttonElement = document.createElement("button");
@@ -90,22 +90,22 @@ const events = [
   new Ticket(
     "BTS Live Concert",
     "2023-08-15",
-    "10:00:00",
+    "18:00:00",
     "New York, NY",
     "Band",
     1000,
     "https://cdn.wallpapersafari.com/97/94/8kOXIG.jpg",
-    2200
+    118
   ),
   new Ticket(
     "Coldplay Live Concert",
     "2023-07-30",
-    "10:00:00",
+    "20:30:00",
     "Madison Square Garden, New York, NY",
     "Band",
     1000,
     "https://i.scdn.co/image/ab6761610000e5eb989ed05e1f0570cc4726c2d3",
-    1400
+    75
   ),
   new Ticket(
     "Taylor Swift World Tour",
@@ -115,7 +115,7 @@ const events = [
     "Solo Artist",
     2000,
     "https://www.billboard.com/wp-content/uploads/2023/06/taylor-swift-live-may-2023-b-r-billboard-1548.jpg?w=942&h=623&crop=1",
-    1600
+    86
   ),
   new Ticket(
     "Ed Sheeran in Concert",
@@ -135,7 +135,7 @@ const events = [
     "Solo Artist",
     1800,
     "https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/32/1471002537-gettyimages-453482991.jpg?resize=1200:*",
-    2800
+    150
   ),
   new Ticket(
     "Imagine Dragons Live Show",
@@ -155,7 +155,7 @@ const events = [
     "Solo Artist",
     1500,
     "https://www.asiaone.com/sites/default/files/original_images/May2023/0523_BRUNO%20MARS_MAIN.jpg",
-    1500
+    80
   ),
   new Ticket(
     "Maroon 5 Concert",
@@ -175,7 +175,7 @@ const events = [
     "Solo Artist",
     2000,
     "https://www.rap-up.com/wp-content/uploads/2022/04/chris-brown-hat-7.jpg",
-    2000
+    107
   ),
 ];
 
