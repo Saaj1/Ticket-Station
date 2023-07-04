@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const markup = `
         <h6>${selectedTicket.name}</h6>
       <p>Date: ${new Date(selectedTicket.date).toLocaleDateString()}</p>
-       <p>Time: ${selectedTicket.time}</p>           
+       <p>Time: ${selectedTicket.time}</p>
       <p>Location: ${selectedTicket.location}</p>
            <p>Category: ${selectedTicket.category}</p>
 
@@ -43,5 +43,5 @@ document
     event.preventDefault(); // Prevent form submission
 
     // Redirect to the success page
-    window.location.href = "events.html";
+    window.location.href = "index.html";
   });
