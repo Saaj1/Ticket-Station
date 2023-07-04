@@ -42,7 +42,7 @@ document.getElementById("signInForm").addEventListener("submit", function(event)
   sessionStorage.setItem('user', JSON.stringify(user));
 
   // Redirect to events.html
-  window.location.href = "index.html";
+  window.location.href = "events.html";
 });
 
 // Email validation function

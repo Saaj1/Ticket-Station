@@ -43,5 +43,5 @@ document
     event.preventDefault(); // Prevent form submission
 
     // Redirect to the success page
-    window.location.href = "index.html";
+    window.location.href = "events.html";
   });
