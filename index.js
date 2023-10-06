@@ -89,7 +89,7 @@ class Ticket extends Event {
 const events = [
   new Ticket(
     "BTS Live Concert",
-    "2023-08-15",
+    "2024-08-15",
     "18:00:00",
     "New York, NY",
     "Band",
@@ -99,7 +99,7 @@ const events = [
   ),
   new Ticket(
     "Coldplay Live Concert",
-    "2023-07-30",
+    "2024-07-30",
     "20:30:00",
     "Madison Square Garden, New York, NY",
     "Band",
@@ -119,7 +119,7 @@ const events = [
   ),
   new Ticket(
     "Ed Sheeran in Concert",
-    "2023-10-05",
+    "2024-10-05",
     "18:30:00",
     "London, UK",
     "Solo Artist",
@@ -129,7 +129,7 @@ const events = [
   ),
   new Ticket(
     "Beyoncé Formation Tour",
-    "2023-02-09",
+    "2024-02-09",
     "19:00:00",
     "Houston, TX",
     "Solo Artist",
@@ -139,7 +139,7 @@ const events = [
   ),
   new Ticket(
     "Imagine Dragons Live Show",
-    "2023-02-02",
+    "2023-10-02",
     "21:00:00",
     "Las Vegas, NV",
     "Band",
@@ -149,7 +149,7 @@ const events = [
   ),
   new Ticket(
     "Bruno Mars World Tour",
-    "2023-01-15",
+    "2023-11-15",
     "20:30:00",
     "Miami, FL",
     "Solo Artist",
@@ -159,7 +159,7 @@ const events = [
   ),
   new Ticket(
     "Maroon 5 Concert",
-    "2023-01-10",
+    "2023-06-10",
     "19:00:00",
     "San Francisco, CA",
     "Band",
@@ -169,7 +169,7 @@ const events = [
   ),
   new Ticket(
     "Chris Brown Live",
-    "2023-07-10",
+    "2024-07-10",
     "19:00:00",
     "Las Angeles, CA",
     "Solo Artist",
